@@ -18,11 +18,15 @@ Each card shows the Chinese character (汉字), pinyin, Vietnamese meaning, and 
 
 ## Usage
 
+Download and then open the html file on your laptop. No dependencies. Works fully offline.
+
 ```
 open hsk4_flashcards.html
 ```
 
-No dependencies. Works fully offline.
+Or access directly the link:
+https://nguyenhau442001.github.io/HSK4-Flashcards-Generator/hsk4_flashcards.html
+
 
 ## Feedback
 
