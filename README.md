@@ -34,7 +34,7 @@ open hsk4_flashcards.html
 ```
 
 Or access directly the link:
-https://nguyenhau442001.github.io/HSK4-Flashcards-Generator/hsk4_flashcards.html
+https://nguyenhau442001.github.io/HSK-Flashcards-Generator/hsk4_flashcards.html
 
 
 ## Feedback
