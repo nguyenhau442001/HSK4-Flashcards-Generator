@@ -14,10 +14,11 @@ Each card shows the Chinese character (汉字), pinyin, Vietnamese meaning, and 
 | HSK2  | 150   | ✅ Available |
 | HSK3  | 300   | ✅ Available |
 | HSK4  | 600   | ✅ Available |
+| HSK5  | 1300  | ✅ Available |
 
 ## Features
 
-- **Multi-level support** — HSK1 and HSK4 available, more coming soon
+- **Multi-level support** — HSK1 through HSK5 available
 - **Example sentences** — Chinese, pinyin, and Vietnamese translation per word
 - **Known / Unknown tracking** — mark cards and filter by status
 - **Shuffle deck** — randomize card order
