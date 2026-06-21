@@ -15,7 +15,7 @@ Each card shows the Chinese character (汉字), pinyin, Vietnamese meaning, and 
 | HSK3  | 300   | ✅ Available |
 | HSK4  | 600   | ✅ Available |
 | HSK5  | 1300  | ✅ Available |
-| HSK6  | 2500  | 🔄 In progress (1700/2500) |
+| HSK6  | 2500  | 🔄 In progress (1850/2500) |
 
 ## Features
 
