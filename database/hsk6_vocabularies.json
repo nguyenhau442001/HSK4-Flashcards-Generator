@@ -12058,5 +12058,905 @@
     "example_zh": "街上传来<u>喇叭</u>声。",
     "example_py": "Jiē shàng chuán lái <u>lǎba</u> shēng.",
     "example_vi": "Trên đường vang lên tiếng <u>loa</u>."
+  },
+  {
+    "id": 1341,
+    "hanzi": "来不及",
+    "pinyin": "lái bù jí",
+    "meaning": "không kịp",
+    "example_zh": "现在出发，<u>来不及</u>了。",
+    "example_py": "Xiànzài chūfā, <u>láibují</u> le.",
+    "example_vi": "Bây giờ xuất phát thì <u>không kịp</u> rồi."
+  },
+  {
+    "id": 1342,
+    "hanzi": "来回",
+    "pinyin": "láihuí",
+    "meaning": "đi lại, qua lại",
+    "example_zh": "他每天<u>来回</u>奔波。",
+    "example_py": "Tā měitiān <u>láihuí</u> bēnbō.",
+    "example_vi": "Anh ấy hàng ngày <u>đi lại</u> vất vả."
+  },
+  {
+    "id": 1343,
+    "hanzi": "来历",
+    "pinyin": "láilì",
+    "meaning": "lai lịch, nguồn gốc",
+    "example_zh": "这件古董的<u>来历</u>不明。",
+    "example_py": "Zhè jiàn gǔdǒng de <u>láilì</u> bùmíng.",
+    "example_vi": "<u>Lai lịch</u> của món đồ cổ này không rõ."
+  },
+  {
+    "id": 1344,
+    "hanzi": "来往",
+    "pinyin": "láiwǎng",
+    "meaning": "đi lại, giao thiệp",
+    "example_zh": "他们两家经常<u>来往</u>。",
+    "example_py": "Tāmen liǎng jiā jīngcháng <u>láiwǎng</u>.",
+    "example_vi": "Hai gia đình họ thường <u>qua lại</u> với nhau."
+  },
+  {
+    "id": 1345,
+    "hanzi": "来源",
+    "pinyin": "láiyuán",
+    "meaning": "nguồn gốc",
+    "example_zh": "这笔钱的<u>来源</u>不明。",
+    "example_py": "Zhè bǐ qián de <u>láiyuán</u> bùmíng.",
+    "example_vi": "<u>Nguồn gốc</u> của số tiền này không rõ."
+  },
+  {
+    "id": 1346,
+    "hanzi": "拦",
+    "pinyin": "lán",
+    "meaning": "chặn",
+    "example_zh": "警察<u>拦</u>住了车辆。",
+    "example_py": "Jǐngchá <u>lán</u> zhù le chēliàng.",
+    "example_vi": "Cảnh sát <u>chặn</u> phương tiện lại."
+  },
+  {
+    "id": 1347,
+    "hanzi": "懒惰",
+    "pinyin": "lǎnduò",
+    "meaning": "lười biếng",
+    "example_zh": "他工作很<u>懒惰</u>。",
+    "example_py": "Tā gōngzuò hěn <u>lǎnduò</u>.",
+    "example_vi": "Anh ấy làm việc rất <u>lười biếng</u>."
+  },
+  {
+    "id": 1348,
+    "hanzi": "滥用",
+    "pinyin": "lànyòng",
+    "meaning": "lạm dụng",
+    "example_zh": "不要<u>滥用</u>权力。",
+    "example_py": "Bùyào <u>lànyòng</u> quánlì.",
+    "example_vi": "Không nên <u>lạm dụng</u> quyền lực."
+  },
+  {
+    "id": 1349,
+    "hanzi": "捞",
+    "pinyin": "lāo",
+    "meaning": "vớt, mò",
+    "example_zh": "他从水里<u>捞</u>起一条鱼。",
+    "example_py": "Tā cóng shuǐ lǐ <u>lāo</u> qǐ yī tiáo yú.",
+    "example_vi": "Anh ấy <u>vớt</u> được một con cá từ trong nước."
+  },
+  {
+    "id": 1350,
+    "hanzi": "劳驾",
+    "pinyin": "láojià",
+    "meaning": "làm ơn, xin nhờ (lời khách sáo)",
+    "example_zh": "<u>劳驾</u>，借光一下。",
+    "example_py": "<u>Láojià</u>, jièguāng yīxià.",
+    "example_vi": "<u>Làm ơn</u>, cho tôi mượn đường một chút."
+  },
+  {
+    "id": 1351,
+    "hanzi": "劳累",
+    "pinyin": "láolèi",
+    "meaning": "mệt mỏi vì làm việc",
+    "example_zh": "他工作太<u>劳累</u>了。",
+    "example_py": "Tā gōngzuò tài <u>láolèi</u> le.",
+    "example_vi": "Anh ấy làm việc quá <u>mệt mỏi</u>."
+  },
+  {
+    "id": 1352,
+    "hanzi": "劳务",
+    "pinyin": "láowù",
+    "meaning": "lao vụ, dịch vụ lao động",
+    "example_zh": "这是<u>劳务</u>合同。",
+    "example_py": "Zhè shì <u>láowù</u> hétong.",
+    "example_vi": "Đây là hợp đồng <u>lao vụ</u>."
+  },
+  {
+    "id": 1353,
+    "hanzi": "老百姓",
+    "pinyin": "lǎobǎixìng",
+    "meaning": "dân thường, bách tính",
+    "example_zh": "<u>老百姓</u>的生活越来越好。",
+    "example_py": "<u>Lǎobǎixìng</u> de shēnghuó yuè lái yuè hǎo.",
+    "example_vi": "Cuộc sống <u>dân thường</u> ngày càng tốt hơn."
+  },
+  {
+    "id": 1354,
+    "hanzi": "老实",
+    "pinyin": "lǎoshi",
+    "meaning": "thật thà",
+    "example_zh": "他是个<u>老实</u>人。",
+    "example_py": "Tā shì gè <u>lǎoshi</u> rén.",
+    "example_vi": "Anh ấy là người <u>thật thà</u>."
+  },
+  {
+    "id": 1355,
+    "hanzi": "乐意",
+    "pinyin": "lèyì",
+    "meaning": "vui lòng, sẵn lòng",
+    "example_zh": "我很<u>乐意</u>帮助你。",
+    "example_py": "Wǒ hěn <u>lèyì</u> bāngzhù nǐ.",
+    "example_vi": "Tôi rất <u>vui lòng</u> giúp bạn."
+  },
+  {
+    "id": 1356,
+    "hanzi": "乐园",
+    "pinyin": "lèyuán",
+    "meaning": "công viên giải trí",
+    "example_zh": "孩子们喜欢去<u>乐园</u>玩。",
+    "example_py": "Háizimen xǐhuan qù <u>lèyuán</u> wán.",
+    "example_vi": "Trẻ em thích đến <u>công viên giải trí</u> chơi."
+  },
+  {
+    "id": 1357,
+    "hanzi": "雷",
+    "pinyin": "léi",
+    "meaning": "sấm",
+    "example_zh": "外面打<u>雷</u>了。",
+    "example_py": "Wàimiàn dǎ <u>léi</u> le.",
+    "example_vi": "Bên ngoài có <u>sấm</u>."
+  },
+  {
+    "id": 1358,
+    "hanzi": "雷达",
+    "pinyin": "léidá",
+    "meaning": "radar",
+    "example_zh": "飞机依靠<u>雷达</u>导航。",
+    "example_py": "Fēijī yīkào <u>léidá</u> dǎoháng.",
+    "example_vi": "Máy bay nhờ <u>radar</u> để dẫn đường."
+  },
+  {
+    "id": 1359,
+    "hanzi": "类别",
+    "pinyin": "lèibié",
+    "meaning": "loại, phân loại",
+    "example_zh": "请按<u>类别</u>整理资料。",
+    "example_py": "Qǐng àn <u>lèibié</u> zhěnglǐ zīliào.",
+    "example_vi": "Xin hãy sắp xếp tài liệu theo <u>loại</u>."
+  },
+  {
+    "id": 1360,
+    "hanzi": "类似",
+    "pinyin": "lèisì",
+    "meaning": "tương tự",
+    "example_zh": "这两件事情很<u>类似</u>。",
+    "example_py": "Zhè liǎng jiàn shìqing hěn <u>lèisì</u>.",
+    "example_vi": "Hai việc này rất <u>tương tự</u>."
+  },
+  {
+    "id": 1361,
+    "hanzi": "类型",
+    "pinyin": "lèixíng",
+    "meaning": "loại hình",
+    "example_zh": "这是一种新<u>类型</u>的产品。",
+    "example_py": "Zhè shì yī zhǒng xīn <u>lèixíng</u> de chǎnpǐn.",
+    "example_vi": "Đây là một <u>loại hình</u> sản phẩm mới."
+  },
+  {
+    "id": 1362,
+    "hanzi": "冷淡",
+    "pinyin": "lěngdàn",
+    "meaning": "lạnh nhạt",
+    "example_zh": "他对我态度很<u>冷淡</u>。",
+    "example_py": "Tā duì wǒ tàidu hěn <u>lěngdàn</u>.",
+    "example_vi": "Thái độ của anh ấy với tôi rất <u>lạnh nhạt</u>."
+  },
+  {
+    "id": 1363,
+    "hanzi": "冷却",
+    "pinyin": "lěngquè",
+    "meaning": "làm lạnh, hạ nhiệt",
+    "example_zh": "机器需要<u>冷却</u>。",
+    "example_py": "Jīqì xūyào <u>lěngquè</u>.",
+    "example_vi": "Máy cần được <u>làm lạnh</u>."
+  },
+  {
+    "id": 1364,
+    "hanzi": "离婚",
+    "pinyin": "líhūn",
+    "meaning": "ly hôn",
+    "example_zh": "他们决定<u>离婚</u>。",
+    "example_py": "Tāmen juédìng <u>líhūn</u>.",
+    "example_vi": "Họ quyết định <u>ly hôn</u>."
+  },
+  {
+    "id": 1365,
+    "hanzi": "黎明",
+    "pinyin": "límíng",
+    "meaning": "lúc rạng đông",
+    "example_zh": "我们在<u>黎明</u>时分出发。",
+    "example_py": "Wǒmen zài <u>límíng</u> shífēn chūfā.",
+    "example_vi": "Chúng tôi xuất phát vào lúc <u>rạng đông</u>."
+  },
+  {
+    "id": 1366,
+    "hanzi": "离奇",
+    "pinyin": "líqí",
+    "meaning": "kỳ lạ, ly kỳ",
+    "example_zh": "这个故事很<u>离奇</u>。",
+    "example_py": "Zhège gùshi hěn <u>líqí</u>.",
+    "example_vi": "Câu chuyện này rất <u>kỳ lạ</u>."
+  },
+  {
+    "id": 1367,
+    "hanzi": "理睬",
+    "pinyin": "lǐcǎi",
+    "meaning": "đoái hoài, để ý đến",
+    "example_zh": "他不<u>理睬</u>我说的话。",
+    "example_py": "Tā bù <u>lǐcǎi</u> wǒ shuō de huà.",
+    "example_vi": "Anh ấy không <u>để ý</u> đến lời tôi nói."
+  },
+  {
+    "id": 1368,
+    "hanzi": "理会",
+    "pinyin": "lǐhuì",
+    "meaning": "hiểu, để ý",
+    "example_zh": "他根本不<u>理会</u>这件事。",
+    "example_py": "Tā gēnběn bù <u>lǐhuì</u> zhè jiàn shì.",
+    "example_vi": "Anh ấy hoàn toàn không <u>để ý</u> đến việc này."
+  },
+  {
+    "id": 1369,
+    "hanzi": "理事",
+    "pinyin": "lǐshì",
+    "meaning": "ủy viên hội đồng",
+    "example_zh": "他是协会的<u>理事</u>。",
+    "example_py": "Tā shì xiéhuì de <u>lǐshì</u>.",
+    "example_vi": "Anh ấy là <u>ủy viên</u> hội đồng hiệp hội."
+  },
+  {
+    "id": 1370,
+    "hanzi": "理所当然",
+    "pinyin": "lǐ suǒ dāng rán",
+    "meaning": "hiển nhiên, lẽ tất nhiên",
+    "example_zh": "帮助朋友是<u>理所当然</u>的。",
+    "example_py": "Bāngzhù péngyou shì <u>lǐsuǒdāngrán</u> de.",
+    "example_vi": "Giúp đỡ bạn bè là điều <u>lẽ tất nhiên</u>."
+  },
+  {
+    "id": 1371,
+    "hanzi": "理直气壮",
+    "pinyin": "lǐ zhí qì zhuàng",
+    "meaning": "có lý nên hùng hồn, đường hoàng",
+    "example_zh": "他<u>理直气壮</u>地反驳了对方。",
+    "example_py": "Tā <u>lǐzhíqìzhuàng</u> de fǎnbó le duìfāng.",
+    "example_vi": "Anh ấy <u>đường hoàng hùng hồn</u> phản bác đối phương."
+  },
+  {
+    "id": 1372,
+    "hanzi": "理智",
+    "pinyin": "lǐzhì",
+    "meaning": "lý trí",
+    "example_zh": "要保持<u>理智</u>。",
+    "example_py": "Yào bǎochí <u>lǐzhì</u>.",
+    "example_vi": "Phải giữ <u>lý trí</u>."
+  },
+  {
+    "id": 1373,
+    "hanzi": "力量",
+    "pinyin": "lìliang",
+    "meaning": "sức mạnh",
+    "example_zh": "团结就是<u>力量</u>。",
+    "example_py": "Tuánjié jiùshì <u>lìliang</u>.",
+    "example_vi": "Đoàn kết chính là <u>sức mạnh</u>."
+  },
+  {
+    "id": 1374,
+    "hanzi": "力气",
+    "pinyin": "lìqi",
+    "meaning": "sức lực",
+    "example_zh": "他花了很大<u>力气</u>搬东西。",
+    "example_py": "Tā huā le hěn dà <u>lìqi</u> bān dōngxi.",
+    "example_vi": "Anh ấy dùng nhiều <u>sức lực</u> để chuyển đồ."
+  },
+  {
+    "id": 1375,
+    "hanzi": "力求",
+    "pinyin": "lìqiú",
+    "meaning": "cố gắng đạt được",
+    "example_zh": "我们<u>力求</u>完美。",
+    "example_py": "Wǒmen <u>lìqiú</u> wánměi.",
+    "example_vi": "Chúng tôi <u>cố gắng</u> đạt sự hoàn hảo."
+  },
+  {
+    "id": 1376,
+    "hanzi": "力图",
+    "pinyin": "lìtú",
+    "meaning": "cố gắng, mưu cầu",
+    "example_zh": "他<u>力图</u>改变现状。",
+    "example_py": "Tā <u>lìtú</u> gǎibiàn xiànzhuàng.",
+    "example_vi": "Anh ấy <u>cố gắng</u> thay đổi tình trạng hiện tại."
+  },
+  {
+    "id": 1377,
+    "hanzi": "历代",
+    "pinyin": "lìdài",
+    "meaning": "các đời, qua các thời đại",
+    "example_zh": "<u>历代</u>皇帝都很重视农业。",
+    "example_py": "<u>Lìdài</u> huángdì dōu hěn zhòngshì nóngyè.",
+    "example_vi": "Hoàng đế <u>qua các thời đại</u> đều rất coi trọng nông nghiệp."
+  },
+  {
+    "id": 1378,
+    "hanzi": "历来",
+    "pinyin": "lìlái",
+    "meaning": "từ trước đến nay",
+    "example_zh": "这里<u>历来</u>都是商业中心。",
+    "example_py": "Zhèlǐ <u>lìlái</u> dōu shì shāngyè zhōngxīn.",
+    "example_vi": "Nơi đây <u>từ trước đến nay</u> đều là trung tâm thương mại."
+  },
+  {
+    "id": 1379,
+    "hanzi": "利害",
+    "pinyin": "lìhài",
+    "meaning": "lợi hại, được mất",
+    "example_zh": "要分析清楚<u>利害</u>关系。",
+    "example_py": "Yào fēnxī qīngchu <u>lìhài</u> guānxi.",
+    "example_vi": "Phải phân tích rõ quan hệ <u>lợi hại</u>."
+  },
+  {
+    "id": 1380,
+    "hanzi": "立场",
+    "pinyin": "lìchǎng",
+    "meaning": "lập trường",
+    "example_zh": "他坚持自己的<u>立场</u>。",
+    "example_py": "Tā jiānchí zìjǐ de <u>lìchǎng</u>.",
+    "example_vi": "Anh ấy giữ vững <u>lập trường</u> của mình."
+  },
+  {
+    "id": 1381,
+    "hanzi": "立交桥",
+    "pinyin": "lìjiāoqiáo",
+    "meaning": "cầu vượt",
+    "example_zh": "前面有一座<u>立交桥</u>。",
+    "example_py": "Qiánmiàn yǒu yī zuò <u>lìjiāoqiáo</u>.",
+    "example_vi": "Phía trước có một <u>cầu vượt</u>."
+  },
+  {
+    "id": 1382,
+    "hanzi": "立体",
+    "pinyin": "lìtǐ",
+    "meaning": "ba chiều, lập thể",
+    "example_zh": "这是一张<u>立体</u>地图。",
+    "example_py": "Zhè shì yī zhāng <u>lìtǐ</u> dìtú.",
+    "example_vi": "Đây là một bản đồ <u>ba chiều</u>."
+  },
+  {
+    "id": 1383,
+    "hanzi": "立足",
+    "pinyin": "lìzú",
+    "meaning": "đứng vững, tồn tại",
+    "example_zh": "公司要在市场上<u>立足</u>。",
+    "example_py": "Gōngsī yào zài shìchǎng shàng <u>lìzú</u>.",
+    "example_vi": "Công ty phải <u>đứng vững</u> trên thị trường."
+  },
+  {
+    "id": 1384,
+    "hanzi": "利率",
+    "pinyin": "lìlǜ",
+    "meaning": "lãi suất",
+    "example_zh": "银行<u>利率</u>下调了。",
+    "example_py": "Yínháng <u>lìlǜ</u> xiàtiáo le.",
+    "example_vi": "<u>Lãi suất</u> ngân hàng đã giảm."
+  },
+  {
+    "id": 1385,
+    "hanzi": "利落",
+    "pinyin": "lìluo",
+    "meaning": "gọn gàng, nhanh nhẹn",
+    "example_zh": "他做事很<u>利落</u>。",
+    "example_py": "Tā zuòshì hěn <u>lìluo</u>.",
+    "example_vi": "Anh ấy làm việc rất <u>gọn gàng nhanh nhẹn</u>."
+  },
+  {
+    "id": 1386,
+    "hanzi": "例外",
+    "pinyin": "lìwài",
+    "meaning": "ngoại lệ",
+    "example_zh": "没有人是<u>例外</u>。",
+    "example_py": "Méiyǒu rén shì <u>lìwài</u>.",
+    "example_vi": "Không ai là <u>ngoại lệ</u>."
+  },
+  {
+    "id": 1387,
+    "hanzi": "例如",
+    "pinyin": "lìrú",
+    "meaning": "ví dụ như",
+    "example_zh": "有些动物，<u>例如</u>熊猫，非常珍贵。",
+    "example_py": "Yǒuxiē dòngwù, <u>lìrú</u> xióngmāo, fēicháng zhēnguì.",
+    "example_vi": "Một số động vật, <u>ví dụ như</u> gấu trúc, rất quý hiếm."
+  },
+  {
+    "id": 1388,
+    "hanzi": "隶属",
+    "pinyin": "lìshǔ",
+    "meaning": "thuộc về, lệ thuộc",
+    "example_zh": "这个部门<u>隶属</u>于总公司。",
+    "example_py": "Zhège bùmén <u>lìshǔ</u> yú zǒng gōngsī.",
+    "example_vi": "Bộ phận này <u>thuộc về</u> tổng công ty."
+  },
+  {
+    "id": 1389,
+    "hanzi": "联欢",
+    "pinyin": "liánhuān",
+    "meaning": "liên hoan, vui chung",
+    "example_zh": "元旦那天大家一起<u>联欢</u>。",
+    "example_py": "Yuándàn nà tiān dàjiā yīqǐ <u>liánhuān</u>.",
+    "example_vi": "Ngày Tết dương lịch mọi người cùng <u>liên hoan</u>."
+  },
+  {
+    "id": 1390,
+    "hanzi": "联络",
+    "pinyin": "liánluò",
+    "meaning": "liên lạc",
+    "example_zh": "请保持<u>联络</u>。",
+    "example_py": "Qǐng bǎochí <u>liánluò</u>.",
+    "example_vi": "Xin hãy giữ <u>liên lạc</u>."
+  },
+  {
+    "id": 1391,
+    "hanzi": "联盟",
+    "pinyin": "liánméng",
+    "meaning": "liên minh",
+    "example_zh": "两国结成了<u>联盟</u>。",
+    "example_py": "Liǎng guó jiéchéng le <u>liánméng</u>.",
+    "example_vi": "Hai nước đã thành lập <u>liên minh</u>."
+  },
+  {
+    "id": 1392,
+    "hanzi": "联系",
+    "pinyin": "liánxì",
+    "meaning": "liên hệ",
+    "example_zh": "有事请<u>联系</u>我。",
+    "example_py": "Yǒu shì qǐng <u>liánxì</u> wǒ.",
+    "example_vi": "Có việc xin hãy <u>liên hệ</u> với tôi."
+  },
+  {
+    "id": 1393,
+    "hanzi": "联想",
+    "pinyin": "liánxiǎng",
+    "meaning": "liên tưởng",
+    "example_zh": "这首歌让我<u>联想</u>到童年。",
+    "example_py": "Zhè shǒu gē ràng wǒ <u>liánxiǎng</u> dào tóngnián.",
+    "example_vi": "Bài hát này khiến tôi <u>liên tưởng</u> đến tuổi thơ."
+  },
+  {
+    "id": 1394,
+    "hanzi": "连忙",
+    "pinyin": "liánmáng",
+    "meaning": "vội vàng, liền ngay",
+    "example_zh": "他<u>连忙</u>道谢。",
+    "example_py": "Tā <u>liánmáng</u> dàoxiè.",
+    "example_vi": "Anh ấy <u>vội vàng</u> cảm ơn."
+  },
+  {
+    "id": 1395,
+    "hanzi": "连年",
+    "pinyin": "liánnián",
+    "meaning": "liên tiếp nhiều năm",
+    "example_zh": "<u>连年</u>丰收。",
+    "example_py": "<u>Liánnián</u> fēngshōu.",
+    "example_vi": "Được mùa <u>liên tục nhiều năm</u>."
+  },
+  {
+    "id": 1396,
+    "hanzi": "连锁",
+    "pinyin": "liánsuǒ",
+    "meaning": "chuỗi, liên hoàn",
+    "example_zh": "这是一家<u>连锁</u>超市。",
+    "example_py": "Zhè shì yī jiā <u>liánsuǒ</u> chāoshì.",
+    "example_vi": "Đây là một siêu thị <u>chuỗi</u>."
+  },
+  {
+    "id": 1397,
+    "hanzi": "连同",
+    "pinyin": "liántóng",
+    "meaning": "cùng với",
+    "example_zh": "工资<u>连同</u>奖金一共发了五千元。",
+    "example_py": "Gōngzī <u>liántóng</u> jiǎngjīn yīgòng fā le wǔqiān yuán.",
+    "example_vi": "Lương <u>cùng với</u> tiền thưởng tổng cộng phát năm nghìn tệ."
+  },
+  {
+    "id": 1398,
+    "hanzi": "连续",
+    "pinyin": "liánxù",
+    "meaning": "liên tục",
+    "example_zh": "他<u>连续</u>工作了十个小时。",
+    "example_py": "Tā <u>liánxù</u> gōngzuò le shí gè xiǎoshí.",
+    "example_vi": "Anh ấy làm việc <u>liên tục</u> mười giờ."
+  },
+  {
+    "id": 1399,
+    "hanzi": "廉洁",
+    "pinyin": "liánjié",
+    "meaning": "trong sạch, liêm khiết",
+    "example_zh": "官员应该<u>廉洁</u>奉公。",
+    "example_py": "Guānyuán yīnggāi <u>liánjié</u> fènggōng.",
+    "example_vi": "Quan chức nên <u>liêm khiết</u> tận tâm với việc công."
+  },
+  {
+    "id": 1400,
+    "hanzi": "帘子",
+    "pinyin": "liánzi",
+    "meaning": "màn, mành",
+    "example_zh": "把<u>帘子</u>放下来。",
+    "example_py": "Bǎ <u>liánzi</u> fàng xiàlái.",
+    "example_vi": "Hãy kéo <u>màn</u> xuống."
+  },
+  {
+    "id": 1401,
+    "hanzi": "怜悯",
+    "pinyin": "liánmǐn",
+    "meaning": "thương xót, đáng thương",
+    "example_zh": "他对流浪儿童充满<u>怜悯</u>。",
+    "example_py": "Tā duì liúlàng értóng chōngmǎn <u>liánmǐn</u>.",
+    "example_vi": "Anh ấy đầy <u>thương xót</u> với trẻ em lang thang."
+  },
+  {
+    "id": 1402,
+    "hanzi": "良好",
+    "pinyin": "liánghǎo",
+    "meaning": "tốt đẹp",
+    "example_zh": "他养成了<u>良好</u>的习惯。",
+    "example_py": "Tā yǎngchéng le <u>liánghǎo</u> de xíguàn.",
+    "example_vi": "Anh ấy hình thành thói quen <u>tốt đẹp</u>."
+  },
+  {
+    "id": 1403,
+    "hanzi": "良心",
+    "pinyin": "liángxīn",
+    "meaning": "lương tâm",
+    "example_zh": "做事要凭<u>良心</u>。",
+    "example_py": "Zuòshì yào píng <u>liángxīn</u>.",
+    "example_vi": "Làm việc phải theo <u>lương tâm</u>."
+  },
+  {
+    "id": 1404,
+    "hanzi": "粮食",
+    "pinyin": "liángshí",
+    "meaning": "lương thực",
+    "example_zh": "<u>粮食</u>生产很重要。",
+    "example_py": "<u>Liángshí</u> shēngchǎn hěn zhòngyào.",
+    "example_vi": "Sản xuất <u>lương thực</u> rất quan trọng."
+  },
+  {
+    "id": 1405,
+    "hanzi": "晾",
+    "pinyin": "liàng",
+    "meaning": "phơi",
+    "example_zh": "把衣服<u>晾</u>在外面。",
+    "example_py": "Bǎ yīfu <u>liàng</u> zài wàimiàn.",
+    "example_vi": "<u>Phơi</u> quần áo ở ngoài."
+  },
+  {
+    "id": 1406,
+    "hanzi": "谅解",
+    "pinyin": "liàngjiě",
+    "meaning": "thông cảm, lượng thứ",
+    "example_zh": "希望你能<u>谅解</u>我。",
+    "example_py": "Xīwàng nǐ néng <u>liàngjiě</u> wǒ.",
+    "example_vi": "Mong bạn có thể <u>thông cảm</u> cho tôi."
+  },
+  {
+    "id": 1407,
+    "hanzi": "辽阔",
+    "pinyin": "liáokuò",
+    "meaning": "rộng lớn (vùng đất, trời)",
+    "example_zh": "草原一片<u>辽阔</u>。",
+    "example_py": "Cǎoyuán yī piàn <u>liáokuò</u>.",
+    "example_vi": "Đồng cỏ một dải <u>rộng lớn</u>."
+  },
+  {
+    "id": 1408,
+    "hanzi": "聊天",
+    "pinyin": "liáotiān",
+    "meaning": "tâm sự, chuyện trò",
+    "example_zh": "我们坐下来<u>聊天</u>。",
+    "example_py": "Wǒmen zuò xiàlái <u>liáotiān</u>.",
+    "example_vi": "Chúng tôi ngồi xuống <u>tâm sự</u>."
+  },
+  {
+    "id": 1409,
+    "hanzi": "列举",
+    "pinyin": "lièjǔ",
+    "meaning": "liệt kê",
+    "example_zh": "请<u>列举</u>几个例子。",
+    "example_py": "Qǐng <u>lièjǔ</u> jǐ gè lìzi.",
+    "example_vi": "Xin hãy <u>liệt kê</u> vài ví dụ."
+  },
+  {
+    "id": 1410,
+    "hanzi": "裂缝",
+    "pinyin": "lièfèng",
+    "meaning": "vết nứt, khe nứt",
+    "example_zh": "墙上有一道<u>裂缝</u>。",
+    "example_py": "Qiáng shàng yǒu yī dào <u>lièfèng</u>.",
+    "example_vi": "Trên tường có một <u>vết nứt</u>."
+  },
+  {
+    "id": 1411,
+    "hanzi": "临床",
+    "pinyin": "línchuáng",
+    "meaning": "lâm sàng",
+    "example_zh": "这是<u>临床</u>试验结果。",
+    "example_py": "Zhè shì <u>línchuáng</u> shìyàn jiéguǒ.",
+    "example_vi": "Đây là kết quả thử nghiệm <u>lâm sàng</u>."
+  },
+  {
+    "id": 1412,
+    "hanzi": "临时",
+    "pinyin": "línshí",
+    "meaning": "tạm thời",
+    "example_zh": "这只是<u>临时</u>措施。",
+    "example_py": "Zhè zhǐshì <u>línshí</u> cuòshī.",
+    "example_vi": "Đây chỉ là biện pháp <u>tạm thời</u>."
+  },
+  {
+    "id": 1413,
+    "hanzi": "吝啬",
+    "pinyin": "lìnsè",
+    "meaning": "keo kiệt",
+    "example_zh": "他对钱很<u>吝啬</u>。",
+    "example_py": "Tā duì qián hěn <u>lìnsè</u>.",
+    "example_vi": "Anh ấy rất <u>keo kiệt</u> về tiền."
+  },
+  {
+    "id": 1414,
+    "hanzi": "灵感",
+    "pinyin": "línggǎn",
+    "meaning": "cảm hứng",
+    "example_zh": "这幅画给了我很多<u>灵感</u>。",
+    "example_py": "Zhè fú huà gěi le wǒ hěn duō <u>línggǎn</u>.",
+    "example_vi": "Bức tranh này cho tôi rất nhiều <u>cảm hứng</u>."
+  },
+  {
+    "id": 1415,
+    "hanzi": "灵魂",
+    "pinyin": "línghún",
+    "meaning": "linh hồn",
+    "example_zh": "教育是国家的<u>灵魂</u>。",
+    "example_py": "Jiàoyù shì guójiā de <u>línghún</u>.",
+    "example_vi": "Giáo dục là <u>linh hồn</u> của đất nước."
+  },
+  {
+    "id": 1416,
+    "hanzi": "灵活",
+    "pinyin": "línghuó",
+    "meaning": "linh hoạt",
+    "example_zh": "处理问题要<u>灵活</u>。",
+    "example_py": "Chǔlǐ wèntí yào <u>línghuó</u>.",
+    "example_vi": "Xử lý vấn đề phải <u>linh hoạt</u>."
+  },
+  {
+    "id": 1417,
+    "hanzi": "凌晨",
+    "pinyin": "língchén",
+    "meaning": "rạng sáng",
+    "example_zh": "他<u>凌晨</u>三点才回家。",
+    "example_py": "Tā <u>língchén</u> sān diǎn cái huíjiā.",
+    "example_vi": "Anh ấy <u>rạng sáng</u> 3 giờ mới về nhà."
+  },
+  {
+    "id": 1418,
+    "hanzi": "零件",
+    "pinyin": "língjiàn",
+    "meaning": "phụ tùng, linh kiện",
+    "example_zh": "这台机器需要更换<u>零件</u>。",
+    "example_py": "Zhè tái jīqì xūyào gēnghuàn <u>língjiàn</u>.",
+    "example_vi": "Cái máy này cần thay <u>linh kiện</u>."
+  },
+  {
+    "id": 1419,
+    "hanzi": "零星",
+    "pinyin": "língxīng",
+    "meaning": "lẻ tẻ, rải rác",
+    "example_zh": "偶尔有<u>零星</u>的小雨。",
+    "example_py": "Ǒu'ěr yǒu <u>língxīng</u> de xiǎoyǔ.",
+    "example_vi": "Đôi khi có vài đợt mưa nhỏ <u>lẻ tẻ</u>."
+  },
+  {
+    "id": 1420,
+    "hanzi": "领会",
+    "pinyin": "lǐnghuì",
+    "meaning": "hiểu thấu, lĩnh hội",
+    "example_zh": "他<u>领会</u>了老师的意图。",
+    "example_py": "Tā <u>lǐnghuì</u> le lǎoshī de yìtú.",
+    "example_vi": "Anh ấy <u>hiểu thấu</u> ý đồ của thầy giáo."
+  },
+  {
+    "id": 1421,
+    "hanzi": "领事馆",
+    "pinyin": "lǐngshìguǎn",
+    "meaning": "lãnh sự quán",
+    "example_zh": "他去<u>领事馆</u>办理签证。",
+    "example_py": "Tā qù <u>lǐngshìguǎn</u> bànlǐ qiānzhèng.",
+    "example_vi": "Anh ấy đến <u>lãnh sự quán</u> để làm visa."
+  },
+  {
+    "id": 1422,
+    "hanzi": "领土",
+    "pinyin": "lǐngtǔ",
+    "meaning": "lãnh thổ",
+    "example_zh": "国家<u>领土</u>完整不可侵犯。",
+    "example_py": "Guójiā <u>lǐngtǔ</u> wánzhěng bùkě qīnfàn.",
+    "example_vi": "<u>Lãnh thổ</u> quốc gia toàn vẹn không thể xâm phạm."
+  },
+  {
+    "id": 1423,
+    "hanzi": "领悟",
+    "pinyin": "lǐngwù",
+    "meaning": "lĩnh hội, hiểu ra",
+    "example_zh": "他逐渐<u>领悟</u>了人生的道理。",
+    "example_py": "Tā zhújiàn <u>lǐngwù</u> le rénshēng de dàolǐ.",
+    "example_vi": "Anh ấy dần dần <u>lĩnh hội</u> được lẽ sống."
+  },
+  {
+    "id": 1424,
+    "hanzi": "领先",
+    "pinyin": "lǐngxiān",
+    "meaning": "dẫn đầu",
+    "example_zh": "我们队一直<u>领先</u>。",
+    "example_py": "Wǒmen duì yīzhí <u>lǐngxiān</u>.",
+    "example_vi": "Đội chúng tôi luôn <u>dẫn đầu</u>."
+  },
+  {
+    "id": 1425,
+    "hanzi": "领袖",
+    "pinyin": "lǐngxiù",
+    "meaning": "lãnh tụ, người đứng đầu",
+    "example_zh": "他是国家的<u>领袖</u>。",
+    "example_py": "Tā shì guójiā de <u>lǐngxiù</u>.",
+    "example_vi": "Ông ấy là <u>lãnh tụ</u> quốc gia."
+  },
+  {
+    "id": 1426,
+    "hanzi": "领域",
+    "pinyin": "lǐngyù",
+    "meaning": "lĩnh vực",
+    "example_zh": "他在科技<u>领域</u>很有成就。",
+    "example_py": "Tā zài kējì <u>lǐngyù</u> hěn yǒu chéngjiù.",
+    "example_vi": "Anh ấy có nhiều thành tựu trong <u>lĩnh vực</u> công nghệ."
+  },
+  {
+    "id": 1427,
+    "hanzi": "溜",
+    "pinyin": "liū",
+    "meaning": "trượt, lẻn đi",
+    "example_zh": "他偷偷<u>溜</u>走了。",
+    "example_py": "Tā tōutōu <u>liū</u> zǒu le.",
+    "example_vi": "Anh ấy lén <u>lẻn</u> đi mất."
+  },
+  {
+    "id": 1428,
+    "hanzi": "流浪",
+    "pinyin": "liúlàng",
+    "meaning": "lang thang",
+    "example_zh": "他过着<u>流浪</u>的生活。",
+    "example_py": "Tā guò zhe <u>liúlàng</u> de shēnghuó.",
+    "example_vi": "Anh ấy sống cuộc đời <u>lang thang</u>."
+  },
+  {
+    "id": 1429,
+    "hanzi": "流露",
+    "pinyin": "liúlù",
+    "meaning": "bộc lộ, lộ ra",
+    "example_zh": "她脸上<u>流露</u>出喜悦。",
+    "example_py": "Tā liǎn shàng <u>liúlù</u> chū xǐyuè.",
+    "example_vi": "Trên mặt cô ấy <u>bộc lộ</u> niềm vui."
+  },
+  {
+    "id": 1430,
+    "hanzi": "流氓",
+    "pinyin": "liúmáng",
+    "meaning": "lưu manh, du đãng",
+    "example_zh": "他被当成<u>流氓</u>抓走了。",
+    "example_py": "Tā bèi dàngchéng <u>liúmáng</u> zhuā zǒu le.",
+    "example_vi": "Anh ta bị coi là <u>lưu manh</u> và bị bắt."
+  },
+  {
+    "id": 1431,
+    "hanzi": "流通",
+    "pinyin": "liútōng",
+    "meaning": "lưu thông",
+    "example_zh": "这种货币在市场上<u>流通</u>。",
+    "example_py": "Zhè zhǒng huòbì zài shìchǎng shàng <u>liútōng</u>.",
+    "example_vi": "Loại tiền này <u>lưu thông</u> trên thị trường."
+  },
+  {
+    "id": 1432,
+    "hanzi": "留念",
+    "pinyin": "liúniàn",
+    "meaning": "lưu niệm",
+    "example_zh": "我们拍照<u>留念</u>。",
+    "example_py": "Wǒmen pāizhào <u>liúniàn</u>.",
+    "example_vi": "Chúng tôi chụp ảnh <u>lưu niệm</u>."
+  },
+  {
+    "id": 1433,
+    "hanzi": "留神",
+    "pinyin": "liúshén",
+    "meaning": "cẩn thận, để ý",
+    "example_zh": "过马路要<u>留神</u>。",
+    "example_py": "Guò mǎlù yào <u>liúshén</u>.",
+    "example_vi": "Qua đường phải <u>cẩn thận</u>."
+  },
+  {
+    "id": 1434,
+    "hanzi": "流域",
+    "pinyin": "liúyù",
+    "meaning": "lưu vực",
+    "example_zh": "长江<u>流域</u>人口众多。",
+    "example_py": "Chángjiāng <u>liúyù</u> rénkǒu zhòngduō.",
+    "example_vi": "<u>Lưu vực</u> sông Trường Giang có dân số đông."
+  },
+  {
+    "id": 1435,
+    "hanzi": "漏洞",
+    "pinyin": "lòudòng",
+    "meaning": "lỗ hổng, kẽ hở",
+    "example_zh": "这个计划有<u>漏洞</u>。",
+    "example_py": "Zhège jìhuà yǒu <u>lòudòng</u>.",
+    "example_vi": "Kế hoạch này có <u>lỗ hổng</u>."
+  },
+  {
+    "id": 1436,
+    "hanzi": "露面",
+    "pinyin": "lòumiàn",
+    "meaning": "xuất hiện, lộ mặt",
+    "example_zh": "他很少在公开场合<u>露面</u>。",
+    "example_py": "Tā hěn shǎo zài gōngkāi chǎnghé <u>lòumiàn</u>.",
+    "example_vi": "Anh ấy ít khi <u>xuất hiện</u> nơi công cộng."
+  },
+  {
+    "id": 1437,
+    "hanzi": "炉灶",
+    "pinyin": "lúzào",
+    "meaning": "bếp lò",
+    "example_zh": "厨房里有一个<u>炉灶</u>。",
+    "example_py": "Chúfáng lǐ yǒu yī gè <u>lúzào</u>.",
+    "example_vi": "Trong nhà bếp có một cái <u>bếp lò</u>."
+  },
+  {
+    "id": 1438,
+    "hanzi": "陆地",
+    "pinyin": "lùdì",
+    "meaning": "đất liền, lục địa",
+    "example_zh": "这种鱼只能在<u>陆地</u>上短暂生存。",
+    "example_py": "Zhè zhǒng yú zhǐnéng zài <u>lùdì</u> shàng duǎnzàn shēngcún.",
+    "example_vi": "Loài cá này chỉ có thể sống tạm thời trên <u>đất liền</u>."
+  },
+  {
+    "id": 1439,
+    "hanzi": "陆续",
+    "pinyin": "lùxù",
+    "meaning": "dần dần, lần lượt",
+    "example_zh": "客人<u>陆续</u>到达。",
+    "example_py": "Kèren <u>lùxù</u> dàodá.",
+    "example_vi": "Khách <u>lần lượt</u> đến."
+  },
+  {
+    "id": 1440,
+    "hanzi": "录用",
+    "pinyin": "lùyòng",
+    "meaning": "tuyển dụng",
+    "example_zh": "公司决定<u>录用</u>他。",
+    "example_py": "Gōngsī juédìng <u>lùyòng</u> tā.",
+    "example_vi": "Công ty quyết định <u>tuyển dụng</u> anh ấy."
   }
 ]
