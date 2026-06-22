@@ -225,14 +225,27 @@ function markKnown() {
   const wIdx = filteredOrder[idx % filteredOrder.length];
   progress[WORDS[wIdx].id] = 'known';
   saveProgress();
-  if (currentFilter !== 'all') setFilter(currentFilter); else nextCard();
+  if (currentFilter !== 'all') advanceAfterMark(wIdx); else nextCard();
 }
 function markUnknown() {
   if (filteredOrder.length===0) return;
   const wIdx = filteredOrder[idx % filteredOrder.length];
   progress[WORDS[wIdx].id] = 'unknown';
   saveProgress();
-  if (currentFilter !== 'all') setFilter(currentFilter); else nextCard();
+  if (currentFilter !== 'all') advanceAfterMark(wIdx); else nextCard();
+}
+function advanceAfterMark(prevWIdx) {
+  const prevIdx = idx;
+  if (currentFilter === 'unseen') filteredOrder = order.filter(i => !progress[WORDS[i].id]);
+  else filteredOrder = order.filter(i => progress[WORDS[i].id] === currentFilter);
+  renderFilters();
+  if (filteredOrder.length === 0) { idx = 0; render(); return; }
+  if (filteredOrder.includes(prevWIdx)) {
+    idx = (prevIdx + 1) % filteredOrder.length;
+  } else {
+    idx = Math.min(prevIdx, filteredOrder.length - 1);
+  }
+  render();
 }
 function togglePinyin() {
   showPinyin = !showPinyin;
