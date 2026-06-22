@@ -17,6 +17,7 @@ let progress = {};
 let showPinyin = true;
 let currentFilter = 'all';
 let transitionTimer = null;
+let celebrationShown = false;
 
 function storageKey(suffix) {
   return 'hsk_' + currentLevel + '_' + suffix + '_v2';
@@ -57,14 +58,37 @@ function goBackToPicker() {
   document.getElementById('screenPicker').style.display = '';
   document.getElementById('screenCards').style.display = 'none';
   currentLevel = null;
+  const overlay = document.getElementById('celebrationOverlay');
+  if (overlay) overlay.remove();
   renderLevelProgress();
 }
 
 async function selectLevel(level) {
+  celebrationShown = false;
   currentLevel = level;
   document.getElementById('screenPicker').style.display = 'none';
   document.getElementById('screenCards').style.display = '';
-  document.getElementById('cardArea').innerHTML = '<div class="loading-text">Đang tải dữ liệu...</div>';
+  document.getElementById('cardArea').innerHTML = `
+    <div class="skel-bar"></div>
+    <div class="skel-card">
+      <div class="skel-line skel-hanzi"></div>
+      <div class="skel-line skel-pinyin"></div>
+      <div class="skel-line skel-hint"></div>
+    </div>
+    <div class="skel-nav">
+      <div class="skel-line skel-nav-btn"></div>
+      <div class="skel-line skel-nav-mid"></div>
+      <div class="skel-line skel-nav-btn"></div>
+    </div>
+    <div class="skel-actions">
+      <div class="skel-line skel-action-btn"></div>
+      <div class="skel-line skel-action-btn"></div>
+    </div>`;
+
+  // Yield to the browser's paint pipeline so the skeleton renders at least one frame
+  // before the fetch begins — necessary for local file:// loads where fetch is instant.
+  await new Promise(r => requestAnimationFrame(r));
+  await new Promise(r => requestAnimationFrame(r));
 
   try {
     const res = await fetch(LEVELS[level].dataUrl);
@@ -390,7 +414,40 @@ function markKnown() {
   const wIdx = filteredOrder[idx % filteredOrder.length];
   progress[WORDS[wIdx].id] = 'known';
   saveProgress();
+  checkCelebration();
   if (currentFilter !== 'all') advanceAfterMark(wIdx); else nextCard();
+}
+function checkCelebration() {
+  if (celebrationShown || WORDS.length === 0) return;
+  const known = Object.values(progress).filter(v => v === 'known').length;
+  if (known === WORDS.length) {
+    celebrationShown = true;
+    showCelebration();
+  }
+}
+function showCelebration() {
+  const overlay = document.createElement('div');
+  overlay.id = 'celebrationOverlay';
+  overlay.className = 'celebration-overlay';
+  overlay.innerHTML = `
+    <div class="celebration-box">
+      <div class="celebration-trophy">🏆</div>
+      <div class="celebration-title">Xuất sắc!</div>
+      <div class="celebration-msg">Bạn đã nhớ tất cả <strong>${WORDS.length}</strong> từ vựng <strong>${LEVELS[currentLevel].label}</strong>!</div>
+      <button class="celebration-btn" onclick="document.getElementById('celebrationOverlay').remove()">Tiếp tục ôn luyện</button>
+    </div>`;
+  overlay.addEventListener('click', e => { if (e.target === overlay) overlay.remove(); });
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const colors = ['var(--accent)', 'var(--success-text)', 'var(--info-text)', 'var(--danger-text)'];
+    for (let i = 0; i < 28; i++) {
+      const p = document.createElement('div');
+      p.className = 'confetti-piece';
+      const size = 5 + Math.random() * 6;
+      p.style.cssText = `left:${3 + Math.random() * 94}%;width:${size}px;height:${size + Math.random() * 7}px;background:${colors[i % colors.length]};animation-delay:${(Math.random() * 0.5).toFixed(2)}s;animation-duration:${(1 + Math.random() * 0.7).toFixed(2)}s;border-radius:${Math.random() > 0.4 ? '50%' : '2px'};`;
+      overlay.appendChild(p);
+    }
+  }
+  document.body.appendChild(overlay);
 }
 function markUnknown() {
   if (filteredOrder.length===0) return;
