@@ -65,8 +65,26 @@ body {
   padding: 44px 24px 28px; text-align: center; cursor: pointer; min-height: 190px;
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
   user-select: none; box-shadow: 0 1px 3px rgba(0,0,0,0.04); transition: box-shadow 0.15s ease;
+  overflow: hidden;
 }
 .card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+.card-content { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.card-content.exit-left  { animation: cardSlideOutLeft  150ms ease forwards; }
+.card-content.exit-right { animation: cardSlideOutRight 150ms ease forwards; }
+.card-content.exit-fade  { animation: cardFadeOut       150ms ease forwards; }
+.card-content.enter-right { animation: cardSlideInRight 150ms ease forwards; }
+.card-content.enter-left  { animation: cardSlideInLeft  150ms ease forwards; }
+.card-content.enter-fade  { animation: cardFadeIn       150ms ease forwards; }
+@keyframes cardSlideOutLeft  { from { opacity:1; transform:translateX(0);     } to { opacity:0; transform:translateX(-40px); } }
+@keyframes cardSlideOutRight { from { opacity:1; transform:translateX(0);     } to { opacity:0; transform:translateX( 40px); } }
+@keyframes cardSlideInRight  { from { opacity:0; transform:translateX( 40px); } to { opacity:1; transform:translateX(0);     } }
+@keyframes cardSlideInLeft   { from { opacity:0; transform:translateX(-40px); } to { opacity:1; transform:translateX(0);     } }
+@keyframes cardFadeOut { from { opacity:1; } to { opacity:0; } }
+@keyframes cardFadeIn  { from { opacity:0; } to { opacity:1; } }
+@media (prefers-reduced-motion: reduce) {
+  .card-content.exit-left,.card-content.exit-right,.card-content.exit-fade,
+  .card-content.enter-right,.card-content.enter-left,.card-content.enter-fade { animation: none; }
+}
 .hanzi { font-size: 46px; font-weight: 600; letter-spacing: 1px; }
 .meaning { font-size: 18px; color: var(--text-primary); display: none; margin-top: 6px; font-weight: 500; }
 .meaning.show { display: block; }

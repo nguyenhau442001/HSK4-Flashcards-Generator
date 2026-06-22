@@ -16,6 +16,7 @@ let idx = 0;
 let progress = {};
 let showPinyin = true;
 let currentFilter = 'all';
+let transitionTimer = null;
 
 function storageKey(suffix) {
   return 'hsk_' + currentLevel + '_' + suffix + '_v2';
@@ -114,19 +115,21 @@ function buildCardArea() {
       <div class="progress-bar-fill" id="progressBar"></div>
     </div>
     <div class="card" id="card" onclick="flip()">
-      <div class="hanzi" id="hanzi"></div>
-      <div class="pinyin-row">
-        <div class="pinyin" id="pinyin"></div>
-        <button class="sound-btn" id="soundBtn" onclick="event.stopPropagation(); speakWord()">🔊</button>
+      <div id="cardContent" class="card-content">
+        <div class="hanzi" id="hanzi"></div>
+        <div class="pinyin-row">
+          <div class="pinyin" id="pinyin"></div>
+          <button class="sound-btn" id="soundBtn" onclick="event.stopPropagation(); speakWord()">🔊</button>
+        </div>
+        <div class="meaning" id="meaning"></div>
+        <div class="example-box" id="exampleBox">
+          <div class="ex-label">Ví dụ</div>
+          <div class="ex-line ex-zh" id="exZh"></div>
+          <div class="ex-line ex-py" id="exPy"></div>
+          <div class="ex-line ex-vi" id="exVi"></div>
+        </div>
+        <div class="hint" id="hint">Nhấn vào thẻ để xem nghĩa và ví dụ</div>
       </div>
-      <div class="meaning" id="meaning"></div>
-      <div class="example-box" id="exampleBox">
-        <div class="ex-label">Ví dụ</div>
-        <div class="ex-line ex-zh" id="exZh"></div>
-        <div class="ex-line ex-py" id="exPy"></div>
-        <div class="ex-line ex-vi" id="exVi"></div>
-      </div>
-      <div class="hint" id="hint">Nhấn vào thẻ để xem nghĩa và ví dụ</div>
     </div>
 
     <div class="nav-row">
@@ -179,7 +182,7 @@ function setFilter(key) {
   else filteredOrder = order.filter(i => progress[WORDS[i].id] === key);
   idx = 0;
   renderFilters();
-  render();
+  render('fade');
 }
 function updateStats() {
   let known = 0, unknown = 0;
@@ -194,34 +197,62 @@ function updateProgress(current, total) {
   const bar = document.getElementById('progressBar');
   if (bar) bar.style.width = (total === 0 ? 0 : (current / total * 100)) + '%';
 }
-function render() {
-  const exBox = document.getElementById('exampleBox');
-  if (exBox) exBox.classList.remove('show');
-  const soundBtn = document.getElementById('soundBtn');
-  if (soundBtn) soundBtn.classList.remove('show');
-  if (filteredOrder.length === 0) {
-    document.getElementById('hanzi').textContent = '';
-    document.getElementById('pinyin').textContent = '';
-    document.getElementById('meaning').textContent = 'Không có từ trong bộ lọc này';
-    document.getElementById('meaning').classList.add('show');
-    document.getElementById('hint').textContent = '';
-    updateProgress(0, 0);
+function render(animate) {
+  if (transitionTimer) { clearTimeout(transitionTimer); transitionTimer = null; }
+
+  const content = document.getElementById('cardContent');
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function applyContent() {
+    if (content) content.className = 'card-content';
+    const exBox = document.getElementById('exampleBox');
+    if (exBox) exBox.classList.remove('show');
+    const soundBtn = document.getElementById('soundBtn');
+    if (soundBtn) soundBtn.classList.remove('show');
+    if (filteredOrder.length === 0) {
+      document.getElementById('hanzi').textContent = '';
+      document.getElementById('pinyin').textContent = '';
+      document.getElementById('meaning').textContent = 'Không có từ trong bộ lọc này';
+      document.getElementById('meaning').classList.add('show');
+      document.getElementById('hint').textContent = '';
+      updateProgress(0, 0);
+      updateStats();
+      return;
+    }
+    const wIdx = filteredOrder[idx % filteredOrder.length];
+    const w = WORDS[wIdx];
+    document.getElementById('hanzi').textContent = w.hanzi;
+    document.getElementById('pinyin').textContent = showPinyin ? w.pinyin : '';
+    const m = document.getElementById('meaning');
+    m.textContent = w.meaning;
+    m.classList.remove('show');
+    document.getElementById('exZh').innerHTML = w.example_zh;
+    document.getElementById('exPy').innerHTML = w.example_py;
+    document.getElementById('exVi').innerHTML = w.example_vi;
+    document.getElementById('hint').textContent = 'Nhấn vào thẻ để xem nghĩa và ví dụ';
+    updateProgress(idx % filteredOrder.length + 1, filteredOrder.length);
     updateStats();
+    if (animate && content && !prefersReduced) {
+      if (animate === 'next') content.classList.add('enter-right');
+      else if (animate === 'prev') content.classList.add('enter-left');
+      else content.classList.add('enter-fade');
+    }
+  }
+
+  if (!animate || !content || prefersReduced) {
+    applyContent();
     return;
   }
-  const wIdx = filteredOrder[idx % filteredOrder.length];
-  const w = WORDS[wIdx];
-  document.getElementById('hanzi').textContent = w.hanzi;
-  document.getElementById('pinyin').textContent = showPinyin ? w.pinyin : '';
-  const m = document.getElementById('meaning');
-  m.textContent = w.meaning;
-  m.classList.remove('show');
-  document.getElementById('exZh').innerHTML = w.example_zh;
-  document.getElementById('exPy').innerHTML = w.example_py;
-  document.getElementById('exVi').innerHTML = w.example_vi;
-  document.getElementById('hint').textContent = 'Nhấn vào thẻ để xem nghĩa và ví dụ';
-  updateProgress(idx % filteredOrder.length + 1, filteredOrder.length);
-  updateStats();
+
+  content.className = 'card-content';
+  if (animate === 'next') content.classList.add('exit-left');
+  else if (animate === 'prev') content.classList.add('exit-right');
+  else content.classList.add('exit-fade');
+
+  transitionTimer = setTimeout(() => {
+    transitionTimer = null;
+    applyContent();
+  }, 150);
 }
 function flip() {
   if (filteredOrder.length === 0) return;
@@ -247,8 +278,8 @@ function speakWord() {
   speechSynthesis.cancel();
   speechSynthesis.speak(utter);
 }
-function nextCard() { if (filteredOrder.length===0) return; idx = (idx + 1) % filteredOrder.length; render(); }
-function prevCard() { if (filteredOrder.length===0) return; idx = (idx - 1 + filteredOrder.length) % filteredOrder.length; render(); }
+function nextCard() { if (filteredOrder.length===0) return; idx = (idx + 1) % filteredOrder.length; render('next'); }
+function prevCard() { if (filteredOrder.length===0) return; idx = (idx - 1 + filteredOrder.length) % filteredOrder.length; render('prev'); }
 function markKnown() {
   if (filteredOrder.length===0) return;
   const wIdx = filteredOrder[idx % filteredOrder.length];
@@ -268,13 +299,13 @@ function advanceAfterMark(prevWIdx) {
   if (currentFilter === 'unseen') filteredOrder = order.filter(i => !progress[WORDS[i].id]);
   else filteredOrder = order.filter(i => progress[WORDS[i].id] === currentFilter);
   renderFilters();
-  if (filteredOrder.length === 0) { idx = 0; render(); return; }
+  if (filteredOrder.length === 0) { idx = 0; render('fade'); return; }
   if (filteredOrder.includes(prevWIdx)) {
     idx = (prevIdx + 1) % filteredOrder.length;
   } else {
     idx = Math.min(prevIdx, filteredOrder.length - 1);
   }
-  render();
+  render('fade');
 }
 function togglePinyin() {
   showPinyin = !showPinyin;
