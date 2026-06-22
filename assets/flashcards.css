@@ -98,9 +98,15 @@ body {
 .filter-row { display: flex; gap: 6px; margin-bottom: 10px; overflow-x: auto; padding-bottom: 4px; }
 .filter-btn { flex-shrink: 0; font-size: 12.5px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--border); background: var(--card-bg); color: var(--text-secondary); cursor: pointer; white-space: nowrap; }
 .filter-btn.active { background: var(--info-bg); color: var(--info-text); border-color: var(--info-text); }
-.toolbar { display: flex; justify-content: flex-end; margin-bottom: 10px; gap: 8px; }
+.toolbar { display: flex; justify-content: flex-end; margin-bottom: 10px; }
 .icon-btn { font-size: 12px; padding: 6px 12px; border-radius: var(--radius-md); border: 1px solid var(--border); background: var(--card-bg); color: var(--text-secondary); cursor: pointer; }
 .icon-btn.on { background: var(--info-bg); color: var(--info-text); border-color: var(--info-text); }
+/* Segmented pill group — wraps the two toolbar buttons into one cohesive control */
+.tool-group { display: flex; border: 1px solid var(--border); border-radius: 999px; overflow: hidden; background: var(--card-bg); }
+.tool-group .icon-btn { font-size: 12.5px; padding: 6px 12px; border-radius: 0; border: none; border-right: 1px solid var(--border); background: transparent; color: var(--text-secondary); white-space: nowrap; }
+.tool-group .icon-btn:last-child { border-right: none; }
+.tool-group .icon-btn.on { background: var(--info-bg); color: var(--info-text); }
+#pinyinToggle { min-width: 9em; }
 .card {
   background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius-lg);
   padding: 44px 24px 28px; text-align: center; cursor: pointer; min-height: 190px;
